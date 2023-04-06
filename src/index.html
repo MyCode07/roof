@@ -6,6 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Производство и монтаж кубообразного потолка и фасада</title>
+
+    <meta name="description" content="content">
+    <meta name="keywords" content="keywords">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="og:title" content="Производство и монтаж кубообразного потолка и фасада">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="https://example.ru/img/svg/logo.svg">
+    <meta name="og:url" content="https://example.ru/">
+    <meta name="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Производство и монтаж кубообразного потолка и фасада">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -16,31 +34,67 @@
     <hedaer class="header">
         <div class="header__container _container">
             <div class="header__body">
-                <a href class="header__logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <nav class="header__menu">
+                <div class="header__left">
+                    <span>Главная</span>
+                    <a href class="header__logo">
+                        <svg width="39" height="42" viewBox="0 0 39 42" fill="#131313"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.1544 15.9816V0L38.6029 20.2279V36.6728L21.1544 15.9816Z" />
+                            <path d="M17.4486 15.9816V0L8.01086e-05 20.2279V36.6728L17.4486 15.9816Z" />
+                            <path d="M38.6029 42H0L19.3015 18.375L38.6029 42Z" />
+                        </svg>
+                    </a>
+                </div>
+
+
+                <div class="header__menu">
                     <div class="header__menu-buttons">
-                        <button>WhatsApp</button>
-                        <img class="header__menu-open" src="img/svg/menu-open.svg" alt="">
+                        <a href="https://wa.me/+79774903977" target="_blank">WhatsApp</a>
+                        <svg stroke='#131313' class="header__menu-open" width="20" height="7" viewBox="0 0 20 9"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H20.5" stroke-width="2" stroke-linecap="round" />
+                            <path d="M9 8L21 8" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
                     </div>
                     <div class="header__menu-body">
-
-                        <ul>
-                            <li><a href=""></a></li>
-                        </ul>
+                        <div class="header__menu-img">
+                            <img src="img/1x1.png" alt="">
+                            <img src="img/1x1.png" alt="">
+                            <img src="img/1x1.png" alt="">
+                            <img src="img/1x1.png" alt="">
+                        </div>
+                        <nav>
+                            <ul>
+                                <li data-name="glavnaya">
+                                    <a data-slide="0" href="#home">Главная</a>
+                                </li>
+                                <li data-name="uslugi">
+                                    <a data-slide="1" href="#services">Услуги</a>
+                                </li>
+                                <li data-name="proizvod">
+                                    <a data-slide="5" href="#production">Производство</a>
+                                </li>
+                                <li data-name="portfolio">
+                                    <a data-slide="6" href="#portfolio">Портфолио</a>
+                                </li>
+                                <li data-name="contacts">
+                                    <a data-slide="7" href="#contcts">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                         <img class="header__menu-close" src="img/svg/menu-close.svg" alt="">
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
     </hedaer>
 
-
     <main class="main">
         <div class="swiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide bc-white">
+                <section data-slide="0" id="home" data-background="#131313" data-title="Главная"
+                    class="swiper-slide bc-white installation-height">
                     <div class="slide-inner">
                         <div class="home">
                             <div class="home__top">
@@ -54,17 +108,15 @@
                                     <span>в Краснодаре под ключ</span>
                                 </h2>
                                 <button class="whatsapp">
-                                    <span>Вызвать замерщика WhatsApp</span>
+                                    <a href="https://wa.me/80000000000" target="_blank">Вызвать замерщика WhatsApp</a>
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-lightgreen consult-height">
+                </section>
+                <section data-slide="1" id="services" data-background="#585858" data-title="Услуги"
+                    class="swiper-slide bc-lightgreen consult-height">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Услуги</span>
-                        </div>
                         <div class="consulting">
                             <ol class="consulting__columns">
                                 <li>
@@ -120,13 +172,10 @@
                             </ol>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-white installation-height">
+                </section>
+                <section data-slide="2" class="swiper-slide bc-white " data-background="#131313"
+                    data-title="Доставка материалов">
                     <div class="slide-inner">
-                        <div class="slide-top">
-
-                            <span class="title">Доставка материалов</span>
-                        </div>
                         <div class="delivery">
                             <div class="delivery__top">
                                 <h2>Доставка</h2>
@@ -151,12 +200,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-darkgreen installation-height">
+                </section>
+                <section data-slide="3" class="swiper-slide bc-darkgreen  installation-height1 list-images"
+                    data-title="Монтаж фасада под ключ" data-background="#585858">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Грильято потолки</span>
-                        </div>
                         <div class="installation ceiling-installation">
                             <ol class="installation__left">
                                 <li data-name="grilyato">
@@ -168,11 +215,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="armstrong">
+                                <li data-name="armstrong">
                                     <label>Армстронг потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -181,11 +228,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="podvesnoy">
+                                <li data-name="podvesnoy">
                                     <label>Подвесной потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -194,11 +241,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="reechnie">
+                                <li data-name="reechnie">
                                     <label>Реечные потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -207,11 +254,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="kuboobraznie">
+                                <li data-name="kuboobraznie">
                                     <label>Кубообразные потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -220,11 +267,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="mineralnie">
+                                <li data-name="mineralnie">
                                     <label>Минеральные потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -233,11 +280,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="alyumin">
+                                <li data-name="alyumin">
                                     <label>Алюминиевый потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -246,11 +293,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li  data-name="kassetnie">
+                                <li data-name="kassetnie">
                                     <label>Кассетные потолки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -259,7 +306,7 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
@@ -273,15 +320,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-lightgreen installation-height">
+                </section>
+                <section data-slide="4" class="swiper-slide bc-lightgreen facade-height list-images"
+                    data-title="Монтаж фасада под ключ" data-background="#585858">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Грильято потолки</span>
-                        </div>
                         <div class="installation facade-installation">
                             <ol class="installation__left">
-                                <li>
+                                <li data-name="grilyato">
                                     <label>Кубообразные фасады</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -290,12 +335,12 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
 
                                 </li>
-                                <li>
+                                <li data-name="armstrong">
                                     <label>Алюминиевые</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -304,11 +349,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-name="podvesnoy">
                                     <label>Фасадные панели</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -317,11 +362,11 @@
                                             текстов на латинице с начала XVI века. В то время
                                         </p>
                                         <button class="whatsapp">
-                                            <span>Вызвать замерщика WhatsApp</span>
+                                            <a href="https://wa.me/+79774903977">Вызвать замерщика WhatsApp</a>
                                         </button>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-name="kuboobraznie">
                                     <label>Фасадные рейки</label>
                                     <div>
                                         <img src="img/main 1.png" alt="">
@@ -336,15 +381,18 @@
                                     </div>
                                 </li>
                             </ol>
-
+                            <div class="installation__right">
+                                <img src="img/1x1.png" alt="">
+                                <img src="img/1x1.png" alt="">
+                                <img src="img/1x1.png" alt="">
+                                <img src="img/1x1.png" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-white installation-height">
+                </section>
+                <section data-slide="5" id="production" class="swiper-slide bc-white installation-height"
+                    data-title="Производство" data-background="#131313">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Производство</span>
-                        </div>
                         <div class="production">
                             <div class="production__top">
                                 <div></div>
@@ -358,50 +406,44 @@
                                     пять веков, но и перешагнул в электронный дизайн. Его по пуляризации в новое
                                     время послужили публикация листов Let</p>
                             </div>
-                            <div class="production__play">
-                                <img src="img/production-play.png" alt="">
-                            </div>
+
                             <div class="production__bottom">
+                                <a href="https://www.youtube.com/watch?v=_sx5QZA-jr8" target="_blank"
+                                    class="production__play">
+                                </a>
                                 <img src="img/production.png" alt="">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-darkgreen">
+                </section>
+                <section data-slide="6" id="portfolio" class="swiper-slide bc-darkgreen" data-background="#131313"
+                    data-title="Портфолио">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Портфолио</span>
-                        </div>
                         <div class="portfolio">
-                            <button class="portfolio__images-close">
-                                <img src="img/svg/close.svg" alt="">
-                            </button>
                             <div class="portfolio__images">
                                 <div class="portfolio__images-img">
-                                    <img src="img/Mask group (4).png" alt="">
+                                    <img src="img/portfolio.png" alt="">
                                 </div>
                                 <div class="portfolio__images-img">
-                                    <img src="img/Mask group (4).png" alt="">
+                                    <img src="img/portfolio.png" alt="">
                                 </div>
                                 <div class="portfolio__images-img">
-                                    <img src="img/Mask group (4).png" alt="">
+                                    <img src="img/portfolio.png" alt="">
                                 </div>
                                 <div class="portfolio__images-img">
-                                    <img src="img/Mask group (4).png" alt="">
+                                    <img src="img/portfolio.png" alt="">
                                 </div>
                                 <div class="portfolio__images-img">
-                                    <img src="img/Mask group (4).png" alt="">
+                                    <img src="img/portfolio.png" alt="">
                                 </div>
                             </div>
                             <h2>Портфолио</h2>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-slide bc-lightgreen">
+                </section>
+                <section data-slide="7" id="contcts" class="swiper-slide bc-lightgreen" data-background="#131313"
+                    data-title="Контакты">
                     <div class="slide-inner">
-                        <div class="slide-top">
-                            <span class="title">Контакты</span>
-                        </div>
                         <div class="contacts">
                             <div class="contacts__top">
                                 <h2>Контакты</h2>
@@ -409,17 +451,25 @@
                                 <a href="tel:+89999999999">8 (999) 999 - 99 - 99</a>
                             </div>
                             <div class="contacts__geo">
-                                <img src="img/geo.png" alt="">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaed8d674d4edf5a3768d0309a5137453b8b38c94fb79a4d8bbdd3849ecb7ba4e&amp;source=constructor"
+                                    width="100%" height="526" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             <div class="pagination">
 
             </div>
         </div>
     </main>
+    <div class="portfolio__gallery">
+        <div class="portfolio__gallery-body">
+            <button class="portfolio__gallery-close"></button>
+            <img src="img/1x1.png" alt="">
+        </div>
+    </div>
 
     <script src=" js/app.min.js"></script>
 </body>

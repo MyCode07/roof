@@ -1,4 +1,5 @@
 import { Swiper, Mousewheel, Pagination, FreeMode } from "swiper";
+import { colorHeader } from "./colorHeader.js";
 
 
 const swiper = new Swiper('.swiper', {
@@ -19,7 +20,7 @@ const swiper = new Swiper('.swiper', {
         sticky: false,
         momentumBounce: true,
     },
-    spaceBetween: 100,
+    spaceBetween: 50,
     pagination: {
         el: '.pagination',
         clickable: true,
@@ -28,7 +29,7 @@ const swiper = new Swiper('.swiper', {
         renderBullet: function (index, className) {
             if (index != 0) {
                 let slide = document.querySelectorAll('.swiper-slide')[index];
-                let title = slide.querySelector('.title').textContent;
+                let title = slide.dataset.title;
                 return ` 
                 <div class="${className} ${slide.classList[1]}">
                     <span>${(index)}.</span>
@@ -37,7 +38,10 @@ const swiper = new Swiper('.swiper', {
             `;
             }
             else {
-                return ``;
+                return `<div class="${className} hidden">
+                    <span></span>
+                    <span></span>
+                </div>`;
             }
         }
     },
@@ -47,15 +51,34 @@ const swiper = new Swiper('.swiper', {
             let swiper = this;
             let index = swiper.activeIndex;
 
-            if (document.querySelectorAll('.swiper-pagination-bullet')[index - 1]) {
-                document.querySelectorAll('.swiper-pagination-bullet')[index - 1].style.display = 'none'
-            }
-            if (document.querySelectorAll('.swiper-pagination-bullet')[index + 1]) {
-                document.querySelectorAll('.swiper-pagination-bullet')[index + 1].style.display = 'flex'
-            }
-            if (document.querySelectorAll('.swiper-pagination-bullet')[index]) {
-                document.querySelectorAll('.swiper-pagination-bullet')[index].style.display = 'flex'
-            }
+            changePagination(index);
+            changeHeaderSectionName(index);
+
+            colorHeader();
         }
     }
 });
+
+function changeHeaderSectionName(index) {
+    const span = document.querySelector('.header__left span');
+    const slide = document.querySelectorAll('.swiper-slide')[index];
+    span.textContent = slide.dataset.title
+}
+
+export function changePagination(index) {
+    const pagination = document.querySelectorAll('.swiper-pagination-bullet')
+    pagination.forEach(item => {
+        item.style.display = 'none';
+
+        if (index != pagination.length - 1) {
+            pagination[index].style.display = 'none';
+
+            if (pagination[index + 1]) {
+                pagination[index + 1].style.display = 'flex';
+            }
+            if (pagination[index + 2]) {
+                pagination[index + 2].style.display = 'flex';
+            }
+        }
+    })
+}

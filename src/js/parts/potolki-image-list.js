@@ -1,6 +1,4 @@
-
-
-export const imgSrcArr = {
+export const listImages = {
     grilyato: [
         'img/ilus1.png',
         'img/ilus2.png',
@@ -11,7 +9,7 @@ export const imgSrcArr = {
     armstrong: [
         'img/ilus1.png',
         'img/ilus2.png',
-        'img/ilus3.png',
+        'img/deliver1.png',
         'img/ilus4.png',
     ],
 
@@ -54,6 +52,4 @@ export const imgSrcArr = {
         'img/ilus3.png',
         'img/ilus4.png',
     ],
-
-
 };
